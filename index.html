@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Umang's Portfolio</title>
+    <script src="https://kit.fontawesome.com/5d4f9cbb96.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+    <nav>
+      <h1 class="logo">Umang.</h1>
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <p>SoftWare Engineer</p>
+        <h1>Hi,I am <span>Umang Dhama</span>  <br> From India.</h1>
+    </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./Images/my.jpg" alt="Profile photo">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure ad nemo quod? Quae ipsam molestias rerum, suscipit eius perspiciatis quos quisquam voluptatem quod obcaecati quasi fugiat alias reprehenderit et eum.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                
+                    <p class="tab-links" onclick="opentab('certificates')">Certificates </p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span> <br>Designing Web/App Interfaces,<br> Web Application Development</li>
+                        <li><span>Java</span> <br>Core Java,DSA,Oops</li>
+                        <li><span>App Development</span> <br>building Ios/Android Apps</li>
+                        <li><span>Sql</span> <br>Data Management</li>
+                    </ul>
+
+                </div>
+               
+                
+                 <div class="tab-content" id="certificates">
+                            <ul>
+                                <li><span>Web Development Bootcamp Certificate</span> <br>The Complete 2023 Web Development Bootcamp - Udemy <br>Completed on: 07/29/2022</li>
+                                <li><span>Flutter & Dart Certificate</span> <br>Flutter & Dart - The Complete Guide [2024 Edition] - Udemy <br>Completed on: 11/19/2023</li>
+                                <li><span>Bosch Ideadthon Winner Certificate</span> <br>Bosch Ideadthon 2021 - Winner</li>
+                            </ul>
+                 </div>
+                 <div class="tab-content" id="education">
+                            <ul>
+                                <li><span>B.Tech(CSE)</span> <br>GL Bajaj Institute of Technology and Management <br>2019 - 2023 <br>Percentage: 82% <br>AKTU</li>
+                                <li><span>Intermediate</span> <br>Indraprastha Public School <br>2018 - 2019 <br>Percentage: 94.6% <br>CBSE</li>
+                                <li><span>High School</span> <br>Vidya Bhawan Public School <br>2016 - 2017 <br>CGPA: 9 <br>CBSE</li>
+                            </ul>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------------------------------- -->
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Application Development</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid odio repellat dolorum nobis praesentium corporis asperiores tempore sunt libero blanditiis laudantium necessitatibus impedit, tenetur deserunt, laboriosam ad recusandae dicta consectetur.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-discord"></i>
+                <h2>App Development</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid odio repellat dolorum nobis praesentium corporis asperiores tempore sunt libero blanditiis laudantium necessitatibus impedit, tenetur deserunt, laboriosam ad recusandae dicta consectetur.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-github"></i>
+                <h2>UI/UX Designing</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid odio repellat dolorum nobis praesentium corporis asperiores tempore sunt libero blanditiis laudantium necessitatibus impedit, tenetur deserunt, laboriosam ad recusandae dicta consectetur.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!------------------Portfolio---------------------->
+
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./Images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Property Price Prediction Web Application</h3>
+                    <p>Crafted a newsletter signup page leveraging Node.js, HTML, CSS, and JavaScript. Integrated the Mailchimp API to seamlessly capture user information and subscription preferences.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="./Images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Expense Tracker</h3>
+                    <p>I'm thrilled to introduce my latest project, the Expense Tracker app! 📊 Developed from scratch using Flutter and Dart, this app has been a significant part of my learning journey. 🚀 With Expense Tracker, you can seamlessly manage your finances on the go. 🤑 Categorize expenses for leisure, work, travel, and study, while tracking transaction dates. 💳 Easily delete entries.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./Images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Food Delivery Frontend</h3>
+                    <p>Check out this frontend site for food delivery! 🍔🛵 Developed with HTML, CSS, and JavaScript, this project showcases my skills in web development. Explore the user-friendly interface and responsive design. 📱💻</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#portfolio" class="btn">See More</a>
+    </div>
+</div>
+
+
+<!------------------Contact---------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>umangdhama21@gmail.com</p>
+                <p><i class="fa-solid fa-address-book"></i>9528891733</p>
+                <div class="social-icons">
+
+                    <a href="https://www.instagram.com/umang__dhama/" ><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/umang-dhama-47547b21a/" ><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/UmangDhama" ><i class="fa-brands fa-github"></i></a>
+                    <a href="https://leetcode.com/u/UmangDhama/" ><i class="fa-solid fa-code"></i></a>
+                </div>
+                <a href="./Images/Umang.pdf" download class="btn btn2">Download My CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form class="from" id="contactForm">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" cols="30" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Send</button>
+                    
+                </form>
+                
+            </div>
+
+            <div class="col-12">
+                <div id="successMsg" class="text-center">
+                  <p>Message sent!</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @UmangD PortFolio</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- Firebase SDK -->
+
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+<script type="module"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
